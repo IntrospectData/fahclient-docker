@@ -1,0 +1,33 @@
+<config>
+
+  <!-- See sample config: /usr/share/doc/fahclient/sample-config.xml -->
+
+  <!-- Client Control 
+       Don't fold anonymously, provide user info. -->
+  <fold-anon v='true'/>
+
+  <!-- Slot Control
+       Options: light, medium or full
+       Watch out for high load -->
+  <power v='full'/>
+
+  <!-- User Information
+       Send all those points to team NairobiLUG 229502
+       http://fah-web2.stanford.edu/cgi-bin/main.py?qtype=teampage&teamnum=229502 -->
+  <user v='Anonymous'/>
+  <team v='0'/>
+
+  <!-- Folding Slots -->
+  <!-- Use all the CPUs
+       Watch out for high load -->
+  <slot id='0' type='CPU'/>
+
+  <!-- Grant Remote Web Access
+       access web UI at 192.168.1.63:7396 -->
+  <allow>127.0.0.1</allow>
+  <web-allow>127.0.0.1</web-allow>
+
+</config>
+
+<!-- vim: set sw=2 ts=2: -->
+
