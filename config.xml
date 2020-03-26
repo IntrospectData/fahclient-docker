@@ -4,7 +4,7 @@
 
   <!-- Client Control 
        Don't fold anonymously, provide user info. -->
-  <fold-anon v='true'/>
+  <fold-anon v='false'/>
 
   <!-- Slot Control
        Options: light, medium or full

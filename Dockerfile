@@ -2,6 +2,8 @@ FROM debian:buster
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+ENV TEAM_NAME=IntrospectData
+
 COPY config.xml /usr/share/doc/fahclient/sample-config.xml
 
 RUN apt update && \
@@ -23,6 +25,8 @@ RUN wget https://download.foldingathome.org/releases/public/release/fahclient/de
     
 RUN rm -rf /var/lib/apt/lists/*
 
+COPY config.xml /etc/fahclient/config.xml
+
 ENTRYPOINT ["/bin/bash", "-c"]
-CMD ["/etc/init.d/FAHClient -u Anonymous -v start; top -b"]
+CMD ["/etc/init.d/FAHClient -v -u $TEAM_NAME start; top -b"]
 
