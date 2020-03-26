@@ -12,10 +12,8 @@
   <power v='full'/>
 
   <!-- User Information
-       Send all those points to team NairobiLUG 229502
-       http://fah-web2.stanford.edu/cgi-bin/main.py?qtype=teampage&teamnum=229502 -->
-  <user v='Anonymous'/>
-  <team v='0'/>
+  <user v='IntrospectData'/>
+  <team v='253518'/>
 
   <!-- Folding Slots -->
   <!-- Use all the CPUs
@@ -23,7 +21,7 @@
   <slot id='0' type='CPU'/>
 
   <!-- Grant Remote Web Access
-       access web UI at 192.168.1.63:7396 -->
+       access web UI at 127.0.0.1 -->
   <allow>127.0.0.1</allow>
   <web-allow>127.0.0.1</web-allow>
 
