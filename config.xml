@@ -10,8 +10,8 @@
        Options: light, medium or full
        Watch out for high load -->
   <power v='full'/>
-
-  <!-- User Information
+	  
+  <!-- User Information -->
   <user v='IntrospectData'/>
   <team v='253518'/>
 
